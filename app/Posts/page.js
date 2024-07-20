@@ -17,7 +17,7 @@ export default async function Post() {
   const postsJsx = posts.map((post) => {
     return (
       <Link href= {`/Posts/${post.id}`}>
-        <div className = "bg-white text-black m-7 p-4 rounded-md ">
+        <div key={post.id} className = "bg-white text-black m-7 p-4 rounded-md ">
           <h1 className= "font-bold">{post.title}</h1>
           <p>{post.body}</p>
         </div>
