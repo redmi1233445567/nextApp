@@ -1,6 +1,12 @@
+import Business from "./componants/Business";
+import HomePage from "./componants/Home";
+
 
 export default function Home() {
   return (
-    <h1>Home Page</h1>
+    <div>
+      <HomePage />
+      <Business />
+    </div>
   );
 }
